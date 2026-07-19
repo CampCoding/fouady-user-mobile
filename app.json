@@ -1,4 +1,5 @@
 {
   "name": "fouad_user",
-  "displayName": "fouad_user"
+  "displayName": "fouad_user",
+  "assets": ["./assets/fonts/Cairo/static/"]
 }
