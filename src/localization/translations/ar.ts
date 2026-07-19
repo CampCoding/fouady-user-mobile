@@ -45,6 +45,12 @@ const ar = {
     your_feedback:'رأيك يهمنا',
     contact:'التواصل',
     why_fouady:'لماذا فؤادي؟',
+
+    // Setting screen
+    electronic_card:'بطاقات الدفع الإلكتروني',
+    language:'اللغة',
+    arabic:'العربية',
+    english:'الإنجليزية',
   },
 } as const;
 

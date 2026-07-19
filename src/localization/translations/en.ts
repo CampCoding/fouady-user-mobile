@@ -46,7 +46,12 @@ const en = {
     your_feedback:'Your Feedback',
     contact:'Contact Us',
     why_fouady:'Why fouady',
-    
+
+    // Setting screen
+    electronic_card:'Electronic Payment Cards',
+    language:'Language',
+    arabic:'Arabic',
+    english:'English',
   },
 } as const;
 

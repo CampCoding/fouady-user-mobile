@@ -5,13 +5,18 @@ import { SettingScreenProps } from './SettingScreen.types';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { colors } from '../../theme';
 import MainCard from '../../components/mainCard';
+import SecondCard from '../../components/secondCard';
+import LangSection from './components/lang_section';
+import ElectronicCardSection from './components/electronic_card';
 
 const SettingScreenUI = (props: SettingScreenProps) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.lightBlack }}>
       <StatusBar/>
       <View style={styles.container}>
-        <MainCard text='الإعدادات' icon='settings' width={100} />
+        <SecondCard text='settings' icon='settings-outline' width={100} />
+        <LangSection/>
+        <ElectronicCardSection/>
       </View>
     </SafeAreaView>
   );
