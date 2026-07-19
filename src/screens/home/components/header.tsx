@@ -6,11 +6,11 @@ import { colors } from '../../../theme';
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
-      <View>
-        <MainText text="مراكز فؤادي" color={colors.white}  size={20} fontWeight="bold" />
-        <MainText text="لقلب الاطفال" color={colors.white} size={16} />
-      </View>
       <Image source={Images.logo} style={styles.headerImg} resizeMode="contain"/>
+      <View>
+        <MainText text="مراكز فؤادي" color={colors.white}  size={24} fontWeight="bold" />
+        <MainText text="لقلب الاطفال" color={colors.primary} size={18} fontWeight="bold" textAlign="center" marginTop={-5}/>
+      </View>
     </View>
   );
 };

@@ -1,4 +1,4 @@
-import { Text } from 'react-native';
+import { I18nManager, Text } from 'react-native';
 import { colors, fonts, FontWeight } from '../theme';
 import { useTranslation } from 'react-i18next';
 
@@ -38,7 +38,8 @@ export default function MainText({
         marginLeft: marginLeft ?? 0,
         marginRight: marginRight ?? 0,
         fontFamily: resolvedFamily,
-        textAlign: textAlign ?? 'center',
+        textAlign: textAlign ?? 'auto',
+        writingDirection: I18nManager.isRTL ? 'rtl' : 'ltr',
       }}
     >
       {t(text)}

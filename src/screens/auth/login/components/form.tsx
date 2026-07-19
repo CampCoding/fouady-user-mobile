@@ -51,18 +51,7 @@ const Form = ({
             )}
 
             <View style={[styles.passwordContainer, errors.password && styles.formInputError]}>
-                 <TouchableOpacity
-                    style={styles.eyeButton}
-                    onPress={() => setSecure(!secure)}
-                    accessibilityRole="button"
-                    accessibilityLabel={secure ? 'Show password' : 'Hide password'}
-                >
-                    <Ionicons
-                        name={secure ? 'eye-off-outline' : 'eye-outline'}
-                        size={22}
-                        color={colors.gray}
-                    />
-                </TouchableOpacity>
+                 
                 <TextInput
                     style={styles.passwordInput}
                     placeholder={t('password')}
@@ -78,6 +67,18 @@ const Form = ({
                         }
                     }}
                 />
+                <TouchableOpacity
+                    style={styles.eyeButton}
+                    onPress={() => setSecure(!secure)}
+                    accessibilityRole="button"
+                    accessibilityLabel={secure ? 'Show password' : 'Hide password'}
+                >
+                    <Ionicons
+                        name={secure ? 'eye-off-outline' : 'eye-outline'}
+                        size={22}
+                        color={colors.gray}
+                    />
+                </TouchableOpacity>
                
             </View>
             {errors.password && (

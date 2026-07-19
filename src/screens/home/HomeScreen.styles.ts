@@ -11,12 +11,15 @@ export default StyleSheet.create({
   },
   headerContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
+    width: '100%',
+    gap: 100,
+    marginVertical: 10,
+    marginHorizontal: 20,
   },
   headerImg:{
-    width: 60,
-    height: 60,
+    width: 100,
+    height: 100,
   }
 
 });

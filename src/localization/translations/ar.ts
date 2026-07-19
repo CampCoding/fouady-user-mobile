@@ -3,6 +3,13 @@ const ar = {
     // App
     app_name: 'فؤادي',
 
+    // bottom navigation
+    home: 'الرئيسية',
+    profile: 'حسابي',
+    settings: 'الإعدادات',
+    notifications: 'الإشعارات',
+    share: 'مشاركة',
+
     // Auth - Login
     login_subtitle: 'تسجيل الدخول',
     login_hint: 'اختر نوع حسابك ثم ادخل بياناتك',
@@ -22,6 +29,22 @@ const ar = {
     phone_required:'رقم الهاتف مطلوب',
     password_required:'كلمة المرور مطلوبة',
     password_min:'كلمة المرور يجب أن تكون 6 أحرف على الأقل',
+
+    // home screen
+    fouady_center:'مركز فؤادي',
+    child_heart:'قلب الأطفال',
+    consultations:'الاستشارات',
+    report:'التقارير',
+    booking:'الحجز',
+    education:'التثقيف',
+    child_journey:'رحلة الطفل',
+    before_visit:'قبل الزيارة',
+    our_team:'فريقنا',
+    services:'خدماتنا',
+    branches:'فروعنا',
+    your_feedback:'رأيك يهمنا',
+    contact:'التواصل',
+    why_fouady:'لماذا فؤادي؟',
   },
 } as const;
 

@@ -22,9 +22,9 @@ export default function FooterSection({
   const { t } = useTranslation();
 
   const options = [
-    { label: t('new_account'), onPress: handleNavToSignup },
-    { label: t('forget_password'), onPress: handleNavToForgetPassword },
     { label: t('change_pass'), onPress: handleNavToChangePassword },
+    { label: t('forget_password'), onPress: handleNavToForgetPassword },
+    { label: t('new_account'), onPress: handleNavToSignup },
   ];
 
   return (
@@ -38,7 +38,8 @@ export default function FooterSection({
          
           <MainText
             text={item.label}
-            color={index !== 0 ? colors.textSecondary : colors.primary}
+            color={index !== 2 ? colors.textSecondary : colors.primary}
+            
           />
            {index !== 2 && <Lucide name='dot' size={20} color={colors.textSecondary} />}
         </TouchableOpacity>

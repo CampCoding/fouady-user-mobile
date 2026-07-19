@@ -4,14 +4,16 @@ import styles from '../LoginScreen.styles';
 import MainText from '../../../../components/mainText';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import { colors } from '../../../../theme';
+import i18n, { setLanguageDirection } from '../../../../localization';
 
 const LangBtn = () => {
-  const { i18n } = useTranslation();
-  const currentLanguage = i18n.resolvedLanguage || i18n.language;
+  const { i18n: translation } = useTranslation();
+  const currentLanguage = translation.resolvedLanguage || translation.language;
 
-  const toggleLanguage = () => {
+  const toggleLanguage = async () => {
     const nextLang = currentLanguage === 'ar' ? 'en' : 'ar';
-    void i18n.changeLanguage(nextLang);
+    await i18n.changeLanguage(nextLang);
+    setLanguageDirection(nextLang);
   };
 
   return (

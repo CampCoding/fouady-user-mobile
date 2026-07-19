@@ -1,1 +1,3 @@
-export interface HomeScreenProps {}
+export interface HomeScreenProps {
+  categories: any[];
+}
