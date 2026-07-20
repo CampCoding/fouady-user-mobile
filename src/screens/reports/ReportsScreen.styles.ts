@@ -8,8 +8,4 @@ export default ScaledSheet.create({
     alignItems: 'center',
     backgroundColor: colors.foreground,
   },
-  logo: {
-    width: '200@s',
-    height: '200@vs',
-  },
 });

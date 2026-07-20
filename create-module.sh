@@ -23,7 +23,7 @@ mkdir -p "$BASE_PATH/services"
 cat <<EOF > "$BASE_PATH/${PASCAL_NAME}Screen.tsx"
 import React from 'react';
 import ${PASCAL_NAME}ScreenUI from './${PASCAL_NAME}Screen_UI';
-import use${PASCAL_NAME}Screen from './${PASCAL_NAME}Screen.hooks';
+import use${PASCAL_NAME}Screen from './hooks/${PASCAL_NAME}Screen.hooks';
 
 const ${PASCAL_NAME}Screen = () => {
   const {} = use${PASCAL_NAME}Screen();
@@ -43,10 +43,11 @@ import { View, Text, StatusBar } from 'react-native';
 import styles from './${PASCAL_NAME}Screen.styles';
 import { ${PASCAL_NAME}ScreenProps } from './${PASCAL_NAME}Screen.types';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { colors } from '../../theme';
 
 const ${PASCAL_NAME}ScreenUI = (props: ${PASCAL_NAME}ScreenProps) => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, backgroundColor: colors.foreground }}>
       <StatusBar/>
       <View style={styles.container}>
         <Text>${PASCAL_NAME} Screen</Text>
@@ -63,13 +64,15 @@ EOF
 ##########################################
 
 cat <<EOF > "$BASE_PATH/${PASCAL_NAME}Screen.styles.ts"
-import { StyleSheet } from 'react-native';
+import { ScaledSheet } from 'react-native-size-matters';
+import { colors } from '../../theme';
 
-export default StyleSheet.create({
+export default ScaledSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: colors.foreground,
   },
 });
 EOF
@@ -80,6 +83,18 @@ EOF
 
 cat <<EOF > "$BASE_PATH/${PASCAL_NAME}Screen.types.ts"
 export interface ${PASCAL_NAME}ScreenProps {}
+EOF
+
+##########################################
+# ${PASCAL_NAME}Screen.hooks.ts
+##########################################
+
+cat <<EOF > "$BASE_PATH/${PASCAL_NAME}Screen.hooks.ts"
+const use${PASCAL_NAME}Screen = () => {
+  return {};
+};
+
+export default use${PASCAL_NAME}Screen;
 EOF
 
 ##########################################

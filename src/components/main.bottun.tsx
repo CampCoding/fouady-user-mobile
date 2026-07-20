@@ -3,37 +3,54 @@ import { Pressable, TouchableOpacity } from 'react-native';
 import { colors } from '../theme';
 import MainText from './mainText';
 import Ionicons from '@react-native-vector-icons/ionicons';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const MainButton = ({
   text,
   onpress,
   textalign = 'right',
+  bg_color = colors.darkGray2,
+  font_color = colors.white,
+  font_size = 14,
+  fontWeight = 'semiBold',
+  bntBorder = colors.primaryLight,
 }: {
   text: string;
-  onpress?: (expanded: boolean) => void;
+  onpress?: () => void;
   textalign?: 'center' | 'left' | 'right';
+  bg_color?: string;
+  font_color?: string;
+  font_size?: number;
+  fontWeight?: 'semiBold' | 'bold';
+  bntBorder?: string;
 }) => {
   const handlePress = () => {
-    
+    onpress?.();
   };
 
   return (
-    <TouchableOpacity
+    <Pressable
       style={{
-        width: '94%',
-        borderRadius: 10,
+        width: '100%',
+        borderRadius: scale(10),
         borderWidth: 1,
-        borderColor: colors.primaryLight,
-        padding: 10,
-        backgroundColor: '#1b1a1a',
-        alignItems:textalign === 'right' ? 'flex-end' : textalign === 'left' ? 'flex-start' : 'center',
-        marginTop: 10,
+        borderColor: bntBorder,
+        paddingVertical: scale(8),
+        paddingHorizontal: scale(10),
+        backgroundColor: bg_color,
+        alignItems:
+          textalign === 'right'
+            ? 'flex-end'
+            : textalign === 'left'
+              ? 'flex-start'
+              : 'center',
+        marginTop: 5,
       }}
       onPress={handlePress}
     >
-      <MainText text={text} color={colors.white} fontWeight="bold" textAlign={'right'}/>
+      <MainText text={text} color={font_color} fontWeight={fontWeight} size={font_size} textAlign={textalign}/>
       
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 

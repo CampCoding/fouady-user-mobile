@@ -1,6 +1,7 @@
 import { I18nManager, Text } from 'react-native';
 import { colors, fonts, FontWeight } from '../theme';
 import { useTranslation } from 'react-i18next';
+import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
 interface MainTextProps {
   text: string;
@@ -32,11 +33,11 @@ export default function MainText({
     <Text
       style={{
         color: color ?? colors.white,
-        fontSize: size ?? 14,
-        marginTop: marginTop ?? 0,
-        marginBottom: marginBottom ?? 0,
-        marginLeft: marginLeft ?? 0,
-        marginRight: marginRight ?? 0,
+        fontSize: moderateScale(size ?? 14),
+        marginTop: verticalScale(marginTop ?? 0),
+        marginBottom: verticalScale(marginBottom ?? 0),
+        marginLeft: scale(marginLeft ?? 0),
+        marginRight: scale(marginRight ?? 0),
         fontFamily: resolvedFamily,
         textAlign: textAlign ?? 'auto',
         writingDirection: I18nManager.isRTL ? 'rtl' : 'ltr',

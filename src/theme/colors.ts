@@ -2,6 +2,7 @@ export const colors = {
   background: '#FFFFFF',
   foreground: '#171717',
   second_background: '#131313',
+  background2:'#090909',
 
   primary: '#d5a660',
   primaryLight: '#D5A65F80',
@@ -30,4 +31,8 @@ export const colors = {
   border: '#EEEEEE',
 
   transparent: 'transparent',
+
+  bntBorder:'#2e2820',
+  inputBorder:'#212121',
+  labelBorder:'#352d22'
 };

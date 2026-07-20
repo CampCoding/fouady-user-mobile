@@ -52,6 +52,7 @@ const en = {
     language:'Language',
     arabic:'Arabic',
     english:'English',
+    save_card:'Save Card'
   },
 } as const;
 

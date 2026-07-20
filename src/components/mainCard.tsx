@@ -4,6 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import MainText from './mainText';
 import { colors } from '../theme';
 import Ionicons, { IoniconsIconName } from '@react-native-vector-icons/ionicons';
+import { scale } from 'react-native-size-matters';
 
 interface MainCardProps {
   image?: ImageSourcePropType;
@@ -36,7 +37,7 @@ export default function MainCard({
     start={{ x: 0.5, y: 0 }}
     end={{ x: 0.5, y: 1 }}
     style={{
-      height: 110,
+      height: scale(95),
       borderRadius: 20,
       borderWidth: 1,
       borderColor: colors.primary,
@@ -55,9 +56,9 @@ export default function MainCard({
         {image?<Image
         source={image}
         style={{
-            width: 25,
-            height: 25,
-            marginBottom: 15,
+            width: scale(25),
+            height: scale(25),
+            marginBottom: scale(15),
         }}
         resizeMode="contain"
         />

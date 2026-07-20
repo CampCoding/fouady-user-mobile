@@ -3,6 +3,7 @@ import styles from '../HomeScreen.styles';
 import { colors } from '../../../theme';
 import MainCard from '../../../components/mainCard';
 import * as Animatable from 'react-native-animatable';
+import { scale } from 'react-native-size-matters';
 const List = ({ data }: { data: any[] }) => {
   return (
     <View style={styles.headerContainer}>
@@ -12,7 +13,7 @@ const List = ({ data }: { data: any[] }) => {
         keyExtractor={(item) => item.id}
         columnWrapperStyle={{
           justifyContent: 'space-between',
-          marginBottom: 16,
+          marginBottom: scale(15),
         }}
         renderItem={({ item , index}) => (
           <Animatable.View animation="fadeIn" duration={1000*index} style={{ flex: 1, marginHorizontal: 15 }}>

@@ -1,4 +1,5 @@
 import { TextStyle } from 'react-native';
+import { moderateScale } from 'react-native-size-matters';
 
 /**
  * Cairo font family names as registered in native (Android assets & iOS Info.plist).
@@ -19,31 +20,31 @@ export type FontWeight = keyof typeof fonts;
 
 export const typography: { [key: string]: TextStyle } = {
   h1: {
-    fontSize: 32,
+    fontSize: moderateScale(32),
     fontFamily: fonts.bold,
   },
   h2: {
-    fontSize: 24,
+    fontSize: moderateScale(24),
     fontFamily: fonts.bold,
   },
   h3: {
-    fontSize: 20,
+    fontSize: moderateScale(20),
     fontFamily: fonts.semiBold,
   },
   body: {
-    fontSize: 16,
+    fontSize: moderateScale(16),
     fontFamily: fonts.regular,
   },
   bodySecondary: {
-    fontSize: 14,
+    fontSize: moderateScale(14),
     fontFamily: fonts.regular,
   },
   button: {
-    fontSize: 16,
+    fontSize: moderateScale(16),
     fontFamily: fonts.semiBold,
   },
   caption: {
-    fontSize: 12,
+    fontSize: moderateScale(12),
     fontFamily: fonts.light,
   },
 };

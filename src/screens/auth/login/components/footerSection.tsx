@@ -6,6 +6,7 @@ import { colors } from '../../../../theme';
 import styles from '../LoginScreen.styles';
 import Lucide from '@react-native-vector-icons/lucide';
 import { LoginScreenProps } from '../LoginScreen.types';
+import { scale } from 'react-native-size-matters';
 
 type FooterSectionProps = Pick<
   LoginScreenProps,
@@ -35,13 +36,17 @@ export default function FooterSection({
           style={styles.FooterSectionBtn}
           onPress={item.onPress}
         >
-         
+          {index !== 2? <Lucide name='dot' size={20} color={colors.textSecondary} />
+          :
+          <View style={{width:scale(10)}}/>  
+        }
           <MainText
             text={item.label}
+            size={12}
             color={index !== 2 ? colors.textSecondary : colors.primary}
             
           />
-           {index !== 2 && <Lucide name='dot' size={20} color={colors.textSecondary} />}
+          
         </TouchableOpacity>
       ))}
     </View>

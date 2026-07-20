@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { ScaledSheet } from 'react-native-size-matters';
 import { colors } from '../../theme';
 
-export default StyleSheet.create({
+export default ScaledSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
@@ -13,13 +13,13 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     width: '100%',
-    gap: 100,
-    marginVertical: 10,
-    marginHorizontal: 20,
+    gap: '60@s',
+    marginTop: '8@vs',
+    marginHorizontal: '20@s',
   },
   headerImg:{
-    width: 100,
-    height: 100,
+    width: '100@s',
+    height: '100@vs',
   }
 
 });

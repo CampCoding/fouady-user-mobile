@@ -5,9 +5,9 @@ const useHomeScreen = (): HomeScreenProps => {
   const categories = [
     {
       id: 1,
-      title: 'consultations',
-      icon: Icons.consultation,
-      screen: 'Consultation',
+      title: 'booking',
+      icon: Icons.booking,
+      screen: 'Booking',
     },
     {
       id: 2,
@@ -17,15 +17,15 @@ const useHomeScreen = (): HomeScreenProps => {
     },
     {
       id: 3,
-      title: 'booking',
-      icon: Icons.booking,
-      screen: 'Booking',
+      title: 'consultations',
+      icon: Icons.consultation,
+      screen: 'Consultation',
     },
     {
       id: 4,
-      title: 'education',
-      icon: Icons.education,
-      screen: 'Education',
+      title: 'before_visit',
+      icon: Icons.before_visit,
+      screen: 'BeforeVisit',
     },
     {
       id: 5,
@@ -35,15 +35,15 @@ const useHomeScreen = (): HomeScreenProps => {
     },
     {
       id: 6,
-      title: 'before_visit',
-      icon: Icons.before_visit,
-      screen: 'BeforeVisit',
+      title: 'education',
+      icon: Icons.education,
+      screen: 'Education',
     },
     {
       id: 7,
-      title: 'our_team',
-      icon: Icons.our_team,
-      screen: 'OurTeam',
+      title: 'branches',
+      icon: Icons.branches,
+      screen: 'Branches',
     },
     {
       id: 8,
@@ -51,17 +51,17 @@ const useHomeScreen = (): HomeScreenProps => {
       icon: Icons.services,
       screen: 'Services',
     },
-    {
+     {
       id: 9,
-      title: 'branches',
-      icon: Icons.branches,
-      screen: 'Branches',
+      title: 'our_team',
+      icon: Icons.our_team,
+      screen: 'OurTeam',
     },
     {
       id: 10,
-      title: 'your_feedback',
-      icon: Icons.review,
-      screen: 'Feedback',
+      title: 'why_fouady',
+      icon: Icons.why_fouady,
+      screen: 'WhyFouady',
     },
     {
       id: 11,
@@ -71,9 +71,9 @@ const useHomeScreen = (): HomeScreenProps => {
     },
     {
       id: 12,
-      title: 'why_fouady',
-      icon: Icons.why_fouady,
-      screen: 'WhyFouady',
+      title: 'your_feedback',
+      icon: Icons.review,
+      screen: 'Feedback',
     },
   ];
 

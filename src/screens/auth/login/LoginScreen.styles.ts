@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { ScaledSheet } from 'react-native-size-matters';
 import { colors } from '../../../theme';
 
-export default StyleSheet.create({
+export default ScaledSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
@@ -9,8 +9,7 @@ export default StyleSheet.create({
     backgroundColor: colors.foreground,
   },
   LangBtn:{
-    paddingHorizontal:10,
-    paddingVertical:5,
+    paddingHorizontal:'10@s',
     borderRadius:20,
     borderColor:colors.primary,
     borderWidth:1,
@@ -27,24 +26,25 @@ export default StyleSheet.create({
     borderRadius:20,
     borderColor:colors.primary,
     borderWidth:1,
-    margin:20,
+    marginHorizontal:'10@s',
+    marginTop:'10@s',
     width:'100%',
-    padding:20,
+    padding:'20@s',
     backgroundColor:colors.second_background,
     
   },
   SelectType:{
     flexDirection:'row',
-    gap:5,
+    gap:'5@s',
     justifyContent:'space-between',
     borderRadius:20,
     borderColor:colors.primary,
     borderWidth:1,
     width:'100%',
-    height:88,
+    height:'70@vs',
     alignItems:'center',
-    padding:10,
-    marginTop:10,
+    padding:'10@ms',
+    marginTop:'10@vs',
 
   },
   typeBnt:{
@@ -93,12 +93,12 @@ export default StyleSheet.create({
   formInput: {
     width: '100%',
     borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
+    paddingHorizontal: '16@s',
+    paddingVertical: '12@vs',
     color: colors.gray,
     borderWidth: 1,
     borderColor: colors.gray,
-    fontSize: 14,
+    fontSize: '14@ms',
     textAlign: 'right',
   },
   passwordContainer: {
@@ -120,11 +120,11 @@ export default StyleSheet.create({
     textAlign: 'right',
   },
   eyeButton: {
-    width: 24,
-    height: 24,
+    width: '24@s',
+    height: '24@s',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: 8,
+    marginLeft: '8@s',
     flexShrink: 0,
   },
   formBtn: {
@@ -140,15 +140,18 @@ export default StyleSheet.create({
     fontWeight: '700',
   },
   FooterSection:{
+    width: '100%',
     flexDirection:'row',
-    justifyContent:'space-between',
-    gap:10,
+    justifyContent:'center',
+    gap:'8@s',
+    marginTop: '10@vs',
+    paddingRight:'10@s',
   },
   FooterSectionBtn:{
-    padding:5,
     flexDirection:'row',
     alignItems:'center',
-    
+    justifyContent:'space-between',
+    width:'33%'
   },
   errorText: {
     color: '#a30407ff',

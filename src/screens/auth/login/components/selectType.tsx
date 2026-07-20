@@ -19,8 +19,8 @@ const SelectType = ({ selectedType, setSelectedType }: SelectTypeProps) => {
     const { t } = useTranslation()
 
     const accountOptions: Array<{ key: AccountType; icon: IconName; label: string }> = [
-        { key: 'doctor', icon: 'medkit-outline', label: 'doctor' },
         { key: 'patient', icon: 'person-outline', label: 'patient' },
+        { key: 'doctor', icon: 'medkit-outline', label: 'doctor' },
     ]
 
     return (

@@ -16,7 +16,7 @@ const ar = {
     // Language button
     lang_label: 'عربي',
     patient: 'مريض',
-    doctor: 'دكتور',
+    doctor: 'طبيب',
     reports:'حجوزاتي و تقاريري',
     Schedule:'مرضاي و مواعيدي',
     password:'كلمة المرور',
@@ -29,6 +29,10 @@ const ar = {
     phone_required:'رقم الهاتف مطلوب',
     password_required:'كلمة المرور مطلوبة',
     password_min:'كلمة المرور يجب أن تكون 6 أحرف على الأقل',
+
+    // change password
+
+    hange_password_subtitle:'لتغيير كلمة المرور',
 
     // home screen
     fouady_center:'مركز فؤادي',
@@ -51,6 +55,15 @@ const ar = {
     language:'اللغة',
     arabic:'العربية',
     english:'الإنجليزية',
+    add_card:'أضف بطاقة',
+    CVV:'رمز التحقق',
+    expiry_date:'تاريخ انتهاء',
+    card_number:'رقم الكارت',
+    card_holder_name:'اسم علي الكارت',
+    card_type:'نوع الكارد',
+    master_card:'ماستر كارد',
+    save_card:'حفظ الكارت'
+    
   },
 } as const;
 
