@@ -9,7 +9,7 @@ import List from './components/list';
 
 const HomeScreenUI = (props: HomeScreenProps) => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: colors.lightBlack }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: colors.background2 }}>
       <StatusBar/>
       <View style={styles.container}>
         <Header/>

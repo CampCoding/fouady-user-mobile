@@ -8,9 +8,20 @@ interface MainInputProps extends TextInputProps {
     rightIcon?: ReactNode;
     containerStyle?: any;
     borderColor?:string;
+    bg_color?:string;
 }
 
-export default function MainInput({ error, rightIcon, containerStyle, style, onFocus, borderColor,onBlur, ...props }: MainInputProps) {
+export default function MainInput({
+     error,
+    rightIcon, 
+    containerStyle, 
+    style, 
+    onFocus, 
+    borderColor,
+    onBlur, 
+    bg_color,
+    ...props 
+}: MainInputProps) {
     const [isFocused, setIsFocused] = useState(false);
 
     return (
@@ -23,6 +34,7 @@ export default function MainInput({ error, rightIcon, containerStyle, style, onF
         : isFocused
         ? colors.primary
         : borderColor ?? colors.gray,
+        backgroundColor: bg_color,
     }, 
                 style
             ]}>

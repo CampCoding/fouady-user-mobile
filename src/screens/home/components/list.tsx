@@ -13,11 +13,12 @@ const List = ({ data }: { data: any[] }) => {
         keyExtractor={(item) => item.id}
         columnWrapperStyle={{
           justifyContent: 'space-between',
-          marginBottom: scale(15),
+          marginBottom: scale(10),
         }}
         renderItem={({ item , index}) => (
-          <Animatable.View animation="fadeIn" duration={1000*index} style={{ flex: 1, marginHorizontal: 15 }}>
+          <Animatable.View animation="fadeIn" duration={1000*index} style={{ flex: 1, marginHorizontal: 10 }}>
             <MainCard
+
               image={item.icon}
               text={item.title}
               backgroundColor={colors.darkGray2}

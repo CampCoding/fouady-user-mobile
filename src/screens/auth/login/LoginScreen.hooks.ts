@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../../navigation/types';
+import { validatePhoneOrEmail, validatePassword } from './validation';
 
 const useLoginScreen = () => {
   const { t } = useTranslation();
@@ -15,8 +16,14 @@ const useLoginScreen = () => {
   const [selectedType, setSelectedType] = useState<'patient' | 'doctor'>('patient');
 
   const loginSchema = yup.object().shape({
-    phoneNumber: yup.string().required(t('phone_required')),
-    password: yup.string().required(t('password_required')).min(6, t('password_min')),
+    phoneNumber: yup
+      .string()
+      .required(t('phone_required'))
+      .test('phone-or-email', t('phone_invalid'), (value) => validatePhoneOrEmail(value ?? '')),
+    password: yup
+      .string()
+      .required(t('password_required'))
+      .test('password-format', t('password_min'), (value) => validatePassword(value ?? '')),
   });
 
   const handleLogin = async () => {

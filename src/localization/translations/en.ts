@@ -27,9 +27,18 @@ const en = {
     forget_password:'Forget Password',
     new_account:'New Account',
     // Validation errors
-    phone_required:'Phone number is required',
+    phone_required:'Email or phone number is required',
+    phone_invalid:'Enter a valid email or phone number',
     password_required:'Password is required',
     password_min:'Password must be at least 6 characters',
+
+    // change password
+    change_password_subtitle:'To change the password',
+    current_password:'Current Password',
+    enter_new_password:'Enter New Password',
+    confirm_new_password:'Confirm New Password',
+    save_changes:'confirm the change',
+    
 
     // home screen
     fouady_center:'Fouadi Center',

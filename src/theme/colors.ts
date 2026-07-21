@@ -9,8 +9,8 @@ export const colors = {
 
   success: '#6A9F1B',
 
-  error: '#671C33',
-  errorText: '#A8334C',
+  error: '#810128ff',
+  errorText: 'rgb(143, 6, 36)',
 
   black: '#000000',
   lightBlack: '#171717',

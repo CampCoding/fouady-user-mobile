@@ -26,14 +26,26 @@ const ar = {
     change_pass:'تغيير كلمة المرور',
     forget_password:'نسيت كلمة المرور',
     new_account:'انشاء حساب',
-    phone_required:'رقم الهاتف مطلوب',
+    phone_required:'البريد الالكتروني أو رقم الهاتف مطلوب',
+    phone_invalid:'أدخل بريدًا إلكترونيًا أو رقم هاتف صحيحًا',
     password_required:'كلمة المرور مطلوبة',
     password_min:'كلمة المرور يجب أن تكون 6 أحرف على الأقل',
 
+    // signup
+    signup: 'انشاء حساب',
+    name:'الاسم',
+    phone:'رقم الهاتف',
+    job:'الوظيفة',
+    work_place:'مكان العمل',
+    confirm_password:'تأكيد كلمة المرور',
+
     // change password
 
-    hange_password_subtitle:'لتغيير كلمة المرور',
-
+    change_password_subtitle:'لتغيير كلمة المرور',
+    current_password:'كلمة المرور الحالية',
+    enter_new_password:'أدخل كلمة المرور الجديدة',
+    confirm_new_password:'أعد إدخال كلمة المرور الجديدة للتأكيد',
+    save_changes:'لتأكيد التغيير ',
     // home screen
     fouady_center:'مركز فؤادي',
     child_heart:'قلب الأطفال',

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import MainText from '../../../../components/mainText';
 import { colors } from '../../../../theme';
 import images from '../../../../utils/images';
-import style from "../ChangePasswordScreen.styles";
+import style from "../SignupScreen.styles";
 import MainButton from '../../../../components/main.bottun';
 
 export default function Header() {

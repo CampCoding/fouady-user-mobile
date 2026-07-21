@@ -9,7 +9,7 @@ const MainButton = ({
   text,
   onpress,
   textalign = 'right',
-  bg_color = colors.darkGray2,
+  bg_color = colors.text,
   font_color = colors.white,
   font_size = 14,
   fontWeight = 'semiBold',

@@ -2,7 +2,7 @@ import React from 'react';
 import { Pressable } from 'react-native';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import { useNavigation } from '@react-navigation/native';
-import { scale } from 'react-native-size-matters';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 import { colors } from '../theme';
 
@@ -32,7 +32,7 @@ const BackButton = ({
       onPress={handlePress}
       style={({ pressed }) => ({
         width: scale(40),
-        height: scale(40),
+        height: verticalScale(40),
         borderRadius: scale(20),
         justifyContent: 'center',
         alignItems: 'center',
